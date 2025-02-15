@@ -21,7 +21,6 @@ export default function Home() {
           </div>
         </nav>
 
-        {/* Hero Section */}
         <header
           className="relative bg-center md:h-[650px] h-[200px] flex flex-col text-center text-white"
           style={{
@@ -29,19 +28,8 @@ export default function Home() {
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
           }}
-        >
-          {/* <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-            <h2 className="text-4xl md:text-5xl font-extrabold">Best Mobile Deals & Accessories</h2>
-            <p className="text-lg mt-2">Latest smartphones, gadgets, and repair services all in one place.</p>
-            <Link href="/contact">
-              <button className="mt-4 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-yellow-300 transition">
-                Get in Touch
-              </button>
-            </Link>
-          </div> */}
-        </header>
+        ></header>
 
-        {/* About Us Section */}
         <section className="container mx-auto px-6 py-12 text-center">
           <h3 className="text-3xl font-bold text-gray-800">Why Choose Us?</h3>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
@@ -107,8 +95,72 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Gallery Section */}
-        {/* Gallery Section */}
+        <section
+          id="repair-services"
+          className="container mx-auto px-6 py-12 text-center"
+        >
+          <h3 className="text-3xl font-bold text-gray-800">
+            🔧 Our Repair Services
+          </h3>
+          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+            We provide expert <b>cell phone repair services</b> for{" "}
+            <b>iPhone, Android, and all major brands.</b>
+            Whether it's a cracked screen, battery issue, or water damage—
+            <b>we fix it all!</b>
+          </p>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold">📱 iPhone Repairs</h4>
+              <p className="text-gray-600 mt-2">
+                Top <b>iPhone Repair in Saskatoon!</b> We offer high-quality,
+                cost-effective repairs for all iPhone models, from screen damage
+                to button issues and software updates.
+              </p>
+              <Image
+                src="/repairiphone.png"
+                alt="iPhone Repair"
+                width={300}
+                height={200}
+                className="rounded-lg shadow-md hover:scale-105 transition duration-300 mx-auto"
+              />
+            </div>
+
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold">🤖 Android Repairs</h4>
+              <p className="text-gray-600 mt-2">
+                We repair
+                <b> Samsung Galaxy, BlackBerry, HTC, and Motorola devices,</b>
+                fixing issues like cracked screens, water damage, keypad
+                failures, and software problems with expert care.
+              </p>
+              <Image
+                src="/androidrepair.jpg"
+                alt="Android Repair"
+                width={300}
+                height={200}
+                className="rounded-lg shadow-md hover:scale-105 transition duration-300 mx-auto"
+              />
+            </div>
+
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold">🔓 Unlocking Service</h4>
+              <p className="text-gray-600 mt-2">
+                <b>Break free from carrier restrictions!</b> We offer
+                professional phone unlocking services, giving you the freedom to
+                use any network—locally or overseas.
+              </p>
+              <Image
+                src="/unlock.png"
+                alt="Phone Unlocking"
+                width={300}
+                height={200}
+                className="rounded-lg shadow-md hover:scale-105 transition duration-300 mx-auto"
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="bg-gray-200 py-12">
           <div className="container mx-auto text-center">
             <h3 className="text-3xl font-bold text-gray-800">Our Shop</h3>
