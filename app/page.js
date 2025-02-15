@@ -151,7 +151,7 @@ export default function Home() {
                 use any network—locally or overseas.
               </p>
               <Image
-                src="/unlock.png"
+                src="/unlock.jpg"
                 alt="Phone Unlocking"
                 width={300}
                 height={200}
