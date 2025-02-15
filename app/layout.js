@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Softer Cell",
   icons: {
-    icon: "/logo.jpeg", // Update this path if needed
+    icon: "/logo.jpeg",
   },
 };
 
